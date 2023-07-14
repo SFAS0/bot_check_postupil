@@ -49,7 +49,11 @@ async def echo_message(msg: types.Message):
     await bot.send_message(msg.from_user.id, check_spisok())
 
 
-if __name__ == '__main__':
+def main():
     executor.start_polling(dp)
+
+
+if __name__ == '__main__':
+    main()
 
 
